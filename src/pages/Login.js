@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Login() {
   return (
@@ -87,7 +88,8 @@ export default function Login() {
                 </div>
                 </div>
                 <div className="right">
-                <input tabIndex={3} type="submit" defaultValue="Sign In" name="login_btn" />
+                <Link to="/dashboard"><button className='btn btn-secondary'>Sign In</button></Link>
+                {/* <input tabIndex={3} type="submit" defaultValue="Sign In" name="login_btn" /> */}
                 </div>
             </div>{/* End of .actions */}
             </form>{/* End of form */}
